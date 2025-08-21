@@ -48,10 +48,13 @@ Nesta primeira fase, o foco será **pesquisa e coleta de dados** sobre hospitais
 ---
 
 ## 📂 4. Estrutura do Repositório
+
 A organização do repositório seguirá uma estrutura modular para manter o projeto organizado:
-    • 🎨 /design: Mockups, imagens e elementos visuais do projeto.
-    • 📄 /docs: Documentação, atas de reunião, especificações e este README.
-    • 🗄️ /database: Scripts e arquivos relacionados à criação e manutenção do banco de dados.
-    • 🕹️ /prototype: Protótipos e provas de conceito do dashboard.
-    • 👨‍💻 /src: Código-fonte principal do projeto.
+
+- 🎨 **/design**: Mockups, imagens e elementos visuais do projeto.  
+- 📄 **/docs**: Documentação, atas de reunião, especificações e este README.  
+- 🗄️ **/database**: Scripts e arquivos relacionados à criação e manutenção do banco de dados.  
+- 🕹️ **/prototype**: Protótipos e provas de conceito do dashboard.  
+- 👨‍💻 **/src**: Código-fonte principal do projeto.  
+
 
