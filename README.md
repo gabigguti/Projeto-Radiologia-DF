@@ -55,6 +55,4 @@ A organização do repositório seguirá uma estrutura modular para manter o pro
 - 📄 **/docs**: Documentação, atas de reunião, especificações e este README.  
 - 🗄️ **/database**: Scripts e arquivos relacionados à criação e manutenção do banco de dados.  
 - 🕹️ **/prototype**: Protótipos e provas de conceito do dashboard.  
-- 👨‍💻 **/src**: Código-fonte principal do projeto.  
-
-
+- 👨‍💻 **/src**: Código-fonte principal do projeto.
