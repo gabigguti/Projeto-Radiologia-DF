@@ -1,0 +1,126 @@
+📄 Descobertas – Projeto Radiologia DF
+Monitoramento de Equipamentos Hospitalares no Distrito Federal
+Projeto Integrador I | Setembro de 2025
+🧠 Introdução
+Este relatório apresenta uma análise aprofundada sobre a disponibilidade, distribuição e impacto dos equipamentos de radiologia nos hospitais públicos do Distrito Federal. A escassez desses recursos compromete diretamente o diagnóstico precoce de doenças graves, como o câncer de mama, e afeta a qualidade do atendimento emergencial. Com base em dados coletados entre 2013 e 2025, o estudo revela padrões preocupantes, como filas de espera excessivas, aumento da mortalidade prematura e desigualdade no acesso aos exames. A partir disso, são propostas soluções estratégicas para melhorar a gestão hospitalar e ampliar o acesso à saúde diagnóstica.
+ 
+📊 1. População (2020–2024) X Equipamentos de Radiologia (2020–2023) X Mortes (2020–2023)
+Resumo do gráfico:
+Este gráfico mostra a evolução da população do Distrito Federal em comparação com o número de equipamentos de radiologia disponíveis nas instituições de saúde e o número de mortes por neoplasias
+Dados:
+● População:
+o 2020: 3.055.149.
+o 2024: 2.982.818.
+o População diminuiu 2,4%.
+● Equipamentos:
+o 2020: 1.890.
+o 2021: 2.298.
+o 2022: 2.639.
+o 2023: 2.734.
+o Equipamentos aumentaram 44,7%.
+● Óbitos por Neoplasias
+o 2020: 2.785
+o 2021: 2.810
+o 2022: 2.785
+o 2023: 2.928
+o Óbitos por Neoplasias aumentaram em 5,1%.
+ 
+Análise:
+Entre 2020 e 2024, a população do DF caiu 2,4%, enquanto os equipamentos de radiologia cresceram 44,7%, aumentando a oferta de exames por habitante. Apesar desse avanço tecnológico, o número de óbitos por neoplasias aumentou 5,1% no período.
+Esse dado sugere que, embora a ampliação da infraestrutura diagnóstica seja essencial, ela não garante por si só a redução da mortalidade oncológica. O controle das neoplasias depende também de fatores como rastreamento oportuno, acesso a especialistas, início precoce do tratamento e políticas de prevenção (ex.: campanhas anti tabagismo, vacinação contra HPV e hepatite B, hábitos de vida saudáveis).
+Em suma, o aumento de equipamentos aponta para melhor capacidade de diagnóstico, mas os óbitos por câncer continuam em crescimento, refletindo desafios estruturais na linha de cuidado oncológica e na integração entre diagnóstico, tratamento e prevenção.
+ 
+🏥 2. Equipamentos por Tipo de Estabelecimento
+Resumo do gráfico:
+Distribuição dos equipamentos de radiologia no Distrito Federal (2025) entre diferentes tipos de unidades de saúde:
+Dados :
+● UBS (Unidade Básica de Saúde): 7
+● Posto de Saúde (PS): 0
+● Hospitais Gerais: 631
+● Hospitais Especializados: 112
+● Policlínicas: 468
+● Clínicas/Centros de Especialidade: 1.233
+● Consultórios Isolados: 287
+● UPA (Unidade de Pronto Atendimento): 8
+● Pronto Atendimento: 32
+● Unidade de Apoio Diagnóstico e Terapia (SADT Isolado): 242
+● Hospital/Dia – Isolado: 52
+● Telessaúde: 8
+● Polo de Prevenção de Doenças e Agravos/Promoção da Saúde: 1
+ 
+ 
+ 
+Análise:
+
+A distribuição dos equipamentos de radiologia no Distrito Federal revela forte concentração em Clínicas e Centros de Especialidade (40%) e em Hospitais Gerais (20,5%), que juntos concentram aproximadamente 60% do total de equipamentos. As Policlínicas (15,2%) e as Unidades de Apoio Diagnóstico e Terapia – SADT isolados (7,9%) também possuem participação expressiva, reforçando o papel do atendimento ambulatorial e de apoio especializado.
+A presença dos Consultórios Isolados (9,3%) demonstra a relevância do setor privado e da prática individual no acesso da população aos exames de imagem, funcionando como complemento à rede hospitalar. Já os Hospitais Especializados (3,6%) e os Hospitais/Dia (1,7%) representam uma fração menor, mas importante dentro da rede de alta complexidade.
+Por outro lado, unidades ligadas à atenção primária e à urgência imediata apresentam baixa disponibilidade de equipamentos de radiologia: Pronto Atendimento (1,0%), UPA (0,3%), UBS (0,2%) e Postos de Saúde (0%). Isso reforça o caráter hospitalocêntrico e especializado da oferta de diagnóstico por imagem no DF.
+Por fim, a presença de Telessaúde (0,3%) e de um único Polo de Prevenção de Doenças e Agravos/Promoção da Saúde (0,03%) indica ainda baixa incorporação dessas modalidades ao sistema radiológico, embora sinalizem possíveis caminhos de expansão tecnológica e preventiva.
+Em síntese, os dados mostram que a capacidade diagnóstica do DF está concentrada em estruturas de maior complexidade, com baixa inserção de equipamentos nos serviços de atenção primária. Isso pode ampliar a dependência da rede hospitalar para exames básicos, impactando tanto a resolutividade precoce quanto a organização do fluxo assistencial.
+ 
+ 
+🧪 3. Pessoas Atendidas por Exame – Hospital de Base (2022–2024)
+Resumo do gráfico:
+Número de pacientes atendidos por exames de imagem no Hospital de Base ao longo dos últimos quatro anos.
+Dados – Hospital de Base
+● 2022: 2503 exames de mamografia
+● 2023: 4883 exames de mamografia
+● 2024: 5361 exames de mamografia
+ 
+Análise:
+O número de mamografias realizadas no Hospital de Base mais que dobrou entre 2022 e 2024, passando de 2.503 para 5.361 exames. Esse aumento expressivo revela uma demanda crescente por diagnóstico precoce, exigindo reforço na infraestrutura e na qualificação das equipes para atender com eficiência.
+ 
+🎗️ 4. Taxa de Internação por Câncer de Mama – Mulheres (2015–2024)
+Resumo do gráfico:
+Evolução da taxa de internação por câncer de mama entre mulheres no DF a cada 100 mil habitantes. (40 a 59 anos)
+Dados:
+● 2019: 270  internações por 100 mil mulheres
+● 2020: 260 internações por 100 mil mulheres​
+● 2021: 250 internações por 100 mil mulheres
+● 2022: 270 internações por 100 mil mulheres
+● 2023: 310 internações por 100 mil mulheres
+● 2024: 300 internações por 100 mil mulheres
+Análise:
+Após uma queda entre 2019 e 2021, a taxa de internação por câncer de mama voltou a subir, atingindo 310 casos por 100 mil mulheres em 2023. Esse aumento pode refletir falhas no rastreamento precoce, reforçando a urgência de ampliar o acesso a exames e fortalecer campanhas de prevenção. A oscilação também sugere desigualdade no atendimento ao longo dos anos.
+ 
+ 
+⚠️5. Taxa de Mortalidade Prematura – Mulheres (2013–2022)
+Resumo do gráfico:
+Taxa de mortalidade prematura (30 a 69 anos) em 100 mil habitantes entre mulheres no DF.
+Dados:
+● 2013: 12,5 óbitos por 100.000 mulheres
+● 2014: 23,3 óbitos por 100.000 mulheres
+● 2019: 21,7 óbitos por 100.000 mulheres
+● 2020: 22,6 óbitos por 100.000 mulheres
+● 2021: 18,0 óbitos por 100.000 mulheres
+● 2022: 20,2 óbitos por 100.000 mulheres
+ 
+Análise:
+A taxa de mortalidade prematura entre mulheres no DF apresentou oscilações significativas, com pico em 2014 (23,3 por 100 mil) e novo aumento em 2022 (20,2). Esses dados sugerem persistência de falhas no diagnóstico precoce, possivelmente agravadas pela escassez de equipamentos de imagem e desigualdade no acesso à saúde. A ampliação da cobertura radiológica pode ser decisiva para reverter esse cenário.
+ 
+📢 Campanhas de Conscientização: Prevenção de Traumas e Quedas no DF
+Em 2025, o Distrito Federal intensificou ações de conscientização voltadas à prevenção de traumas e quedas, com destaque para duas iniciativas:
+● A campanha Maio Amarelo, voltada à prevenção de acidentes de trânsito, revelou que cerca de 22,2 mil brasileiros sofrem traumas faciais graves por ano, sendo as principais causas acidentes com motocicletas, agressões físicas e quedas.
+● A Procuradoria de Defesa dos Direitos da Pessoa Idosa da CLDF promoveu ações educativas em parceria com a Secretaria de Saúde, destacando que mais de 500 idosos foram internados por fraturas no fêmur em 2023, evidenciando a urgência de medidas preventivas
+● Com foco na promoção da saúde, autonomia e qualidade de vida, a Sejus-DF realizou um workshop que contou com mais de 150 idosos do programa Viver 60+, voltado à prevenção de quedas e acidentes domésticos em idosos.
+ 
+Análise:
+As campanhas realizadas no DF têm impacto direto na redução de traumas, especialmente entre idosos e trabalhadores expostos a riscos físicos. No entanto, a ausência de integração entre essas ações e os dados hospitalares dificulta a avaliação de resultados. Dessa forma, deve-se integrar as campanhas de conscientização e áreas hospitalares para que a eficácia de campanhas aumente cada vez mais.
+ 
+ 
+🕒 Filas de Espera e Impacto na Vida dos Pacientes
+A situação das filas por exames de imagem no DF é crítica e tem sido alvo de investigação pelo Ministério Público.
+Dados com base em notícias reais:
+● Mais de 33 mil pacientes aguardam exames como tomografia, mamografia e ressonância.
+● Há pedidos de exame com espera desde 2019, inclusive em casos classificados como urgência e emergência.
+● Sistema de regulação (Sisreg) registra pedidos pendentes desde 2019, inclusive em casos classificados como urgência
+Análise:
+A fila de espera por exames no DF ultrapassa o limite da gestão ineficiente e se torna um problema grave de saúde pública. Com mais de 857 mil solicitações acumuladas, inclusive em casos urgentes, o impacto direto na vida dos pacientes é devastador. A ausência de equipamentos, falhas na regulação e demora no atendimento contribuem para diagnósticos tardios e óbitos evitáveis.
+ 
+💡 Conclusão e Recomendações
+A análise dos dados evidencia que o sistema de radiologia hospitalar do DF enfrenta gargalos estruturais e operacionais que afetam diretamente a vida dos pacientes. A concentração de equipamentos em poucos estabelecimentos, o crescimento da demanda por exames, e a falta de integração com campanhas de prevenção revelam a urgência de medidas concretas: Recomenda-se:
+● Redistribuir os equipamentos de radiologia de forma mais equitativa entre os tipos de unidades de saúde
+● Investigar as possíveis causas do aumento das mortes por neoplasias, considerando fatores como acesso tardio ao diagnóstico, barreiras ao tratamento e falhas no rastreamento.
+● Fortalecer campanhas de prevenção de traumas e rastreamento precoce, com integração aos dados hospitalares
+● Ampliar a cobertura de exames de imagem em UPAs e Prontos-Socorros, reduzindo filas e tempo de espera
+Essas ações podem melhorar significativamente o atendimento emergencial e os índices de saúde pública no Distrito Federal.
