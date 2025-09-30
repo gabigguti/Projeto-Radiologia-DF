@@ -1,7 +1,15 @@
  Projeto Radiologia DF: Monitoramento de Equipamentos Hospitalares
 
-**1. Descrição do Projeto**
-O acesso a equipamentos de radiologia, como máquinas de raio-x e mamografia, é essencial para diagnósticos rápidos e precisos em hospitais. Muitos hospitais do Distrito Federal enfrentam problemas de falta desses equipamentos, resultando em atrasos no atendimento emergencial e dificuldades no tratamento de pacientes, incluindo a detecção tardia de doenças como o câncer.
+**Descrição do Projeto**
+O acesso a equipamentos de radiologia, como máquinas de raio-X e mamografia, é essencial para
+diagnósticos rápidos e precisos em hospitais. No entanto, muitos hospitais do Distrito Federal enfrentam a
+falta desses equipamentos, o que resulta em atrasos no atendimento emergencial e dificuldades no
+tratamento de pacientes, incluindo a detecção tardia de doenças como o câncer.
+
+O Projeto Radiologia DF busca levantar dados sobre a disponibilidade e o uso desses equipamentos,
+campanhas de conscientização para prevenção de traumas e quedas, além de monitorar o tempo médio de
+atendimento emergencial. O objetivo final é desenvolver um dashboard interativo que centralize essas
+informações e apresente gráficos claros e acessíveis.
 
 O **Projeto Radiologia DF** busca levantar dados sobre a disponibilidade e uso desses equipamentos, campanhas de conscientização sobre prevenção de traumas e quedas, e o tempo médio de atendimento emergencial. O objetivo final é desenvolver um dashboard interativo que centralize essas informações e apresente gráficos claros sobre:
 - Disponibilidade de equipamentos de radiologia e mamografia;  
@@ -9,7 +17,7 @@ O **Projeto Radiologia DF** busca levantar dados sobre a disponibilidade e uso d
 - Resultados de exames (como mamografia) e atrasos na detecção de doenças;  
 - Eficácia e alcance de campanhas de conscientização (anti-queda, anti-traumas e do SUS).
   
-**2. Objetivos Iniciais – Fase de Levantamento de Dados**
+**Objetivos Iniciais – Fase de Levantamento de Dados**
 Nesta primeira fase, o foco será **pesquisa e coleta de dados** sobre hospitais do DF.
 
 **Metas:**
@@ -31,7 +39,7 @@ Nesta primeira fase, o foco será **pesquisa e coleta de dados** sobre hospitais
 - **Justificar a Solução:**  
   - Fornecer dados e análises como base para recomendações que melhorem a gestão de equipamentos hospitalares.  
 
-**3. Membros da Equipe e Papéis**
+**Membros da Equipe e Papéis**
 | Membro              | Papel                      |
 |---------------------|----------------------------|
 | Gabrielle Gutierres | Pesquisa / UX              |
@@ -41,12 +49,9 @@ Nesta primeira fase, o foco será **pesquisa e coleta de dados** sobre hospitais
 | Henrique Lessa      | Desenvolvimento / Pesquisa |
 | Gabriel Marques     | Desenvolvimento / Pesquisa |
 
-**4. Estrutura do Repositório**
-
-A organização do repositório seguirá uma estrutura modular para manter o projeto organizado:
-
-- 🎨 **/design**: Mockups, imagens e elementos visuais do projeto.  
-- 📄 **/docs**: Documentação, atas de reunião, especificações e este README.  
-- 🗄️ **/database**: Scripts e arquivos relacionados à criação e manutenção do banco de dados.  
-- 🕹️ **/prototype**: Protótipos e provas de conceito do dashboard.  
-- 👨‍💻 **/src**: Código-fonte principal do projeto.
+**Estrutura do Repositório**
+- **/design**: Mockups, imagens e elementos visuais do projeto.  
+- **/docs**: Documentação, atas de reunião, especificações e este README.  
+- **/database**: Scripts e arquivos relacionados à criação e manutenção do banco de dados.  
+- **/prototype**: Protótipos e provas de conceito do dashboard.  
+- **/src**: Código-fonte principal do projeto.
