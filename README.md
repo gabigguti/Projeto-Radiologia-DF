@@ -1,45 +1,52 @@
- Projeto Radiologia DF: Monitoramento de Equipamentos Hospitalares
+# **Projeto Radiologia DF: Monitoramento de Equipamentos Hospitalares**
 
-**Descrição do Projeto**
-O acesso a equipamentos de radiologia, como máquinas de raio-X e mamografia, é essencial para
-diagnósticos rápidos e precisos em hospitais. No entanto, muitos hospitais do Distrito Federal enfrentam a
-falta desses equipamentos, o que resulta em atrasos no atendimento emergencial e dificuldades no
-tratamento de pacientes, incluindo a detecção tardia de doenças como o câncer.
+## **Descrição do Projeto**
 
-O Projeto Radiologia DF busca levantar dados sobre a disponibilidade e o uso desses equipamentos,
-campanhas de conscientização para prevenção de traumas e quedas, além de monitorar o tempo médio de
-atendimento emergencial. O objetivo final é desenvolver um dashboard interativo que centralize essas
-informações e apresente gráficos claros e acessíveis.
+O Projeto Radiologia DF tem como objetivo desenvolver um painel interativo capaz de consolidar, interpretar e comunicar informações sobre a infraestrutura de diagnóstico por imagem da rede pública do Distrito Federal, em especial mamógrafos, aparelhos de raio-x e equipamentos relacionados à oncologia.
 
-O **Projeto Radiologia DF** busca levantar dados sobre a disponibilidade e uso desses equipamentos, campanhas de conscientização sobre prevenção de traumas e quedas, e o tempo médio de atendimento emergencial. O objetivo final é desenvolver um dashboard interativo que centralize essas informações e apresente gráficos claros sobre:
-- Disponibilidade de equipamentos de radiologia e mamografia;  
-- Casos em que a falta de equipamento impactou o paciente;  
-- Resultados de exames (como mamografia) e atrasos na detecção de doenças;  
-- Eficácia e alcance de campanhas de conscientização (anti-queda, anti-traumas e do SUS).
-  
-**Objetivos Iniciais – Fase de Levantamento de Dados**
-Nesta primeira fase, o foco será **pesquisa e coleta de dados** sobre hospitais do DF.
+Segundo entidades como o Tribunal de Contas do Distrito Federal (TCDF) e o Sistema Único de Saúde (SUS), os sistemas de saúde do DF enfrentam problemas como baixa disponibilidade de equipamentos, altos tempos de espera. Além disso, os dados sobre saúde encontram-se fragmentados entre diversas plataformas como DATASUS, SISCAN, CNES e IBGE, dificultando a tomada de decisão estratégica por parte de gestores públicos. Outro fator crítico é que parte dessas plataformas opera em ambientes sem proteção HTTPS, o que compromete a criptografia da comunicação. Tal vulnerabilidade pode expor gestores e usuários a riscos como interceptação de dados, manipulação de informações e falhas de autenticidade, fatores incompatíveis com a criticidade dos dados de saúde pública.
 
-**Metas:**
+
+O **Projeto Radiologia DF** busca resolver essa lacuna criando uma plataforma acessível, unificada, segura e interpretativa, capaz de apoiar:
+- Gestores públicos, que necessitam de indicadores claros para planejamento e alocação de recursos;
+- Pesquisadores e acadêmicos, que se beneficiam de dados integrados e análises estruturadas;  
+- Pacientes e público geral, que ganham transparência sobre gargalos e desempenho da rede hospitalar;
+
+A solução propõe:
+- Centralização de dados sobre equipamentos e exames;
+- Visualizações interpretativas sobre demanda, oferta, atrasos e gargalos;
+- Análises preditivas sobre demanda futura (ex.: séries temporais ARIMA);
+- Indicadores de eficiência e uso dos equipamentos;
+- Avaliação de acessibilidade e usabilidade dos portais oficiais;
+
+## **Metas:**
 - **Coletar e Estruturar Dados:**  
-  - Levantar informações sobre equipamentos de radiologia e mamografia;  
-  - Identificar campanhas de conscientização do SUS;  
-  - Mapear tempo médio de atendimento emergencial;  
-  - Catalogar casos em que a falta de equipamento impactou o paciente.  
+  - Levantar informações dos equipamentos de radiologia e mamografia do DF.
+  - Integrar dados dispersos das plataformas DATASUS, SISCAN, CNES, TABNET e IBGE.
+  - Mapear tempos de espera, capacidade teórica x realizada e volume de exames.
+  - Catalogar indicadores de manutenção, disponibilidade e inoperância.
+  - Reunir dados de campanhas de conscientização (queda, trauma, oncologia).
 
 - **Desenvolver Dashboard Interativo:**  
-  - Exibir gráficos de atrasos no diagnóstico;  
-  - Apresentar a distribuição e disponibilidade de equipamentos nos hospitais;  
-  - Mostrar resultados e alcance das campanhas de conscientização.  
+  - Visualizar atrasos de exames e gargalos regionais.
+  - Exibir distribuição geográfica dos equipamentos.
+  - Mostrar eficiência operacional (taxas de utilização, capacidade versus demanda).
+  - Integrar análises diagnósticas e preditivas, incluindo:
+    - projeção de demanda de exames até 2030 (ARIMA)
+    - simulação de impacto de novos investimentos (+10 mamógrafos → redução de X% no tempo médio)
+    - estimativa de depreciação e renovação da frota de equipamentos
 
 - **Analisar Padrões e Tendências:**  
-  - Identificar hospitais com maior escassez de equipamentos;  
-  - Relacionar a falta de recursos com impacto no atendimento e diagnóstico.  
+  - Identificar regiões críticas com escassez de equipamentos.
+  - Relacionar falta de manutenção com atrasos e diminuição da capacidade produtiva.
+  - Comparar DF com médias nacionais (benchmarking).
 
-- **Justificar a Solução:**  
+- **Justificar a Solução:**
+  - Transformar dados dispersos em inteligência acessível, apoiando políticas públicas.
+  - Criar recurso de transparência para sociedade e para pesquisas acadêmicas.
   - Fornecer dados e análises como base para recomendações que melhorem a gestão de equipamentos hospitalares.  
 
-**Membros da Equipe e Papéis**
+## **Membros da Equipe e Papéis**
 | Membro              | Papel                      |
 |---------------------|----------------------------|
 | Gabrielle Gutierres | Pesquisa / UX              |
@@ -49,7 +56,7 @@ Nesta primeira fase, o foco será **pesquisa e coleta de dados** sobre hospitais
 | Henrique Lessa      | Desenvolvimento / Pesquisa |
 | Gabriel Marques     | Desenvolvimento / Pesquisa |
 
-**Estrutura do Repositório**
+## **Estrutura do Repositório**
 - **/design**: Mockups, imagens e elementos visuais do projeto.  
 - **/docs**: Documentação, atas de reunião, especificações e este README.  
 - **/database**: Scripts e arquivos relacionados à criação e manutenção do banco de dados.  
