@@ -1,0 +1,34 @@
+ra,qtd_gama_camara,qtd_mamografo_comando_simples,qtd_mamografo_estereotaxia,qtd_raio_X_100_mA,qtd_raio_X_100_500_mA,qtd_raio_X_mais_500_mA,qtd_raio_X_dentario,qtd_raio_X_fluoroscopia,qtd_raio_X_densitometria_ossea,qtd_raio_X_hemodinamica,qtd_tomógrafo_computadorizado,qtd_ressonancia_magnetica,qtd_ultrassom_doppler_colorido,qtd_ultrassom_ecografo,qtd_ultrassom_convencional,qtd_processadora_de_filme_mamografia,qtd_mamografo_computadorizado,qtd_pet_ct
+Plano Piloto,1,21,2,32,13,2,29,11,1,5,22,19,57,27,76,23,10,1
+Gama,0,1,0,0,5,2,1,1,0,0,4,3,3,13,1,1,0,0
+Brazlândia,0,0,0,0,4,1,1,1,0,0,0,0,1,1,0,0,0,0
+Sobradinho,0,1,1,0,9,0,8,0,0,0,3,2,4,6,4,2,2,0
+Candangolândia,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Riacho Fundo II,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Riacho Fundo,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Recanto das Emas,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Lago Sul,0,0,0,0,2,0,0,1,1,1,1,3,1,2,1,0,0,0
+Planaltina,0,0,0,3,2,1,2,1,0,0,0,0,0,2,0,0,0,0
+Paranoá,0,1,0,4,3,1,3,0,0,0,1,0,0,2,0,2,0,0
+Guará,0,0,0,1,3,0,1,0,0,0,3,1,1,2,0,0,1,0
+Samambaia,0,1,0,0,4,3,0,0,0,0,1,0,2,1,1,1,0,0
+Santa Maria,0,1,0,0,3,0,1,0,0,0,1,0,2,1,1,1,0,0
+São Sebastião,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Park Way,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sobradinho II,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Jardim Botânico,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0
+Vicente Pires,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0
+SIA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Águas Claras,0,0,0,0,0,0,0,0,0,0,0,1,0,2,0,0,0,0
+Ceilândia,0,1,0,0,10,5,9,0,1,0,3,5,9,2,3,1,1,0
+Fercal,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Taguatinga,0,1,1,3,9,6,11,2,1,0,6,7,5,9,2,2,1,0
+Sol Nascente/  Pôr do Sol,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Arniqueira,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Sudoeste/ Octogonal,0,0,0,0,0,0,0,0,3,0,0,1,0,3,0,0,0,0
+Varjão,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Núcleo Bandeirante,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cruzeiro,0,0,0,0,5,0,0,0,0,2,3,1,16,15,0,0,1,0
+Lago Norte,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SCIA,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Itapoã,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

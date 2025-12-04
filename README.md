@@ -49,16 +49,16 @@ A solução propõe:
 ## **Membros da Equipe e Papéis**
 | Membro              | Papel                      |
 |---------------------|----------------------------|
-| Gabrielle Gutierres | Pesquisa / UX              |
-| Matheus Moraes      | Pesquisa                   |
 | Pedro Klein         | Pesquisa                   |
+| Henrique Lessa      | Pesquisa                   |
+| Gabrielle Gutierres | Pesquisa / UX              |
 | Thales Rassi        | Desenvolvimento / Pesquisa |
-| Henrique Lessa      | Desenvolvimento / Pesquisa |
+| Matheus Moraes      | Desenvolvimento / Pesquisa |
 | Gabriel Marques     | Desenvolvimento / Pesquisa |
 
 ## **Estrutura do Repositório**
 - **/design**: Mockups, imagens e elementos visuais do projeto.  
-- **/docs**: Documentação, atas de reunião, especificações e este README.  
-- **/database**: Scripts e arquivos relacionados à criação e manutenção do banco de dados.  
-- **/prototype**: Protótipos e provas de conceito do dashboard.  
+- **/docs**: Entregáveis, documentação, atas de reunião, especificações e afins.  
+- **/database**: Arquivos dos dados coletados.  
+- **/prototype**: Protótipos.  
 - **/src**: Código-fonte principal do projeto.
