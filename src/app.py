@@ -29,4 +29,38 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+@st.dialog("👋 Bem-vindo(a) ao Projeto Radiologia DF")
+def welcome_dialog():
+    st.markdown(
+        """
+        ### Resumo
+
+        Este Painel refere-se ao Projeto Integrador 1 do Centro Universitário de Brasília (CEUB), e apresenta o desenvolvimento de uma solução voltada ao mapeamento e análise dos equipamentos de imagem e temas correlatos no Distrito Federal.
+        
+        ### Navegação do Menu Lateral
+
+        - **Dashboard**: Gráficos e análises sobre os dados reunidos durante o projeto.  
+
+        - **Mapa de Equipamentos**: Mapa interativo dos equipamentos de imagem do SUS no Distrito Federal.  
+
+        - **Dados Brutos**: Fontes de dados e datasets utilizados para a geração dos gráficos e análises.  
+
+        - **Implementações Futuras**: Melhorias planejadas para o projeto, abrangendo automações, integrações de dados, novos recursos analíticos e aprimoramentos estruturais.  
+
+        - **Equipe do Projeto**: Membros participantes e link para o repositório do projeto. 
+
+        Explore os menus para entender mais sobre a situação de saúde pública do Distrito Federal!
+        """
+    )
+
+    if st.button("Começar"):
+        st.session_state.welcome_shown = True
+        st.rerun()   # ⬅️ ESSENCIAL
+
+if "welcome_shown" not in st.session_state:
+    st.session_state.welcome_shown = False
+
+if not st.session_state.welcome_shown:
+    welcome_dialog()
+
 pg.run()

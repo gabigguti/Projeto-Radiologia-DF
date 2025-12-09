@@ -3,7 +3,7 @@ import streamlit as st
 st.set_page_config(page_title="Equipe do Projeto", layout="wide")
 
 st.title("Equipe do Projeto")
-st.write("Conheça os membros da equipe responsável pelo desenvolvimento deste projeto:")
+st.subheader("Conheça os membros da equipe responsável pelo desenvolvimento deste projeto:")
 
 equipe = [
     {
@@ -27,8 +27,8 @@ equipe = [
     {
         "nome": "Pedro Klein",
         "cargo": "Pesquisa",
-        "github": "https://github.com/",
-        "foto": "https://avatars.githubusercontent.com/u/104402993?v=4",
+        "github": "https://github.com/kleinpkms",
+        "foto": "https://avatars.githubusercontent.com/u/110698224?v=4",
     },
     {
         "nome": "Matheus Morais",
@@ -103,5 +103,7 @@ for i in range(0, len(equipe), numero_colunas):
                     unsafe_allow_html=True
                 )
 
+st.title("Repositório do Projeto")
+st.subheader("Confira o repositório na íntegra: https://github.com/gabigguti/Projeto-Radiologia-DF")
                 
                 

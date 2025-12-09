@@ -48,13 +48,17 @@ def kpi_exame_mais_requisitado(df):
     if diferenca_absoluta is None or diferenca_percentual is None:
         texto_delta = "Sem dado do ano anterior"
     else:
-        texto_delta = f"{diferenca_absoluta:+,} exames ({diferenca_percentual:+.1f}%) em relação ao ano de {ano_anterior}".replace(",", ".")
+        texto_delta = f"{diferenca_percentual:+.1f}% em relação ao ano de {ano_anterior}".replace(",", ".")
 
     # Métrica no topo do dashboard
     st.metric(
-        label=f"Grupo de exames de imagem mais requisitado no SUS em {ano_recente}",
-        value=f"{subgrupo_topo}: {int(valor_recente):,}".replace(",", "."),
+        label=f"Grupo de exames de imagem mais realizado no SUS em {ano_recente}",
+        value=f"{subgrupo_topo}",
         delta=texto_delta,
+        help=("Esta métrica refere-se ao grupo de exames de imagem mais requisitado," 
+        "ou seja, aquele com o maior número de registros de realizações encontrados "
+        "nas bases de dados do Ministério da Saúde no ano vigente \n\n"
+        "Última Atualização em 03/12/2025"),
         delta_color="normal" 
     )
 
@@ -98,9 +102,15 @@ def kpi_ra_mais_vulneravel(df1,df2):
     prop_sem_plano = ra_pior["prop_sem_plano"] * 100
 
     st.metric(
-        label="RA mais vulnerável (↓ Equipamentos ↑ Dependência do SUS)",
-        value=f"{ra_nome}: {total_equip} equipamentos",
+        label="Região Administrativa com situação de saúde mais vulnerável",
+        value=f"{ra_nome}",
         delta=f"{prop_sem_plano:.1f}% sem plano de saúde",
+        help=(
+            "Esta métrica refere-se à Região Administrativa mais vulnerável do Distrito Federal, "
+            "ou seja, aquela que possui o menor número de equipamentos de imagem em sua área "
+            "e o maior percentual de pessoas sem plano de saúde.\n\n"
+            "Última atualização: 03/12/2025."
+        ),
         delta_color="off"
     )
 
@@ -150,7 +160,7 @@ def kpi_mes_com_mais_mamografias(df):
         diff_pct = (diff / exames_anterior) * 100 if exames_anterior > 0 else None
 
         if diff_pct is not None:
-            delta_text = f"{diff:+} exames ({diff_pct:+.1f}%) em relação à {mes_nome_anterior} de {ano_anterior}"
+            delta_text = f"{diff_pct:+.1f}% em relação ao mês mais requisitado ({mes_nome_anterior}) de {ano_anterior}"
         else:
             delta_text = f"{diff:+} exames vs. {mes_nome_anterior}/{ano_anterior}"
     else:
@@ -161,8 +171,13 @@ def kpi_mes_com_mais_mamografias(df):
     # KPI final
     st.metric(
         label=f"Mês com mais mamografias em {ano_atual}",
-        value=f"{mes_nome_atual}: {exames_atual} exames",
+        value=f"{mes_nome_atual}",
         delta=delta_text,
+        help=(
+            "Esta métrica identifica o mês com maior número de mamografias realizadas no ano vigente,"
+            " e o compara com o mês de maior volume registrado no ano anterior. \n\n"
+            "Última atualização: 03/12/2025."
+        ),
         delta_color="normal"
     )
 
@@ -185,19 +200,26 @@ def kpi_links_sem_https(df):
     st.metric(
         label="Páginas que NÃO implementam HTTPS",
         value=f"{perc_sem_https:.1f}% sem criptografia",
+        help=("Esta métrica representa a porcentagem de páginas do portal DataSUS" 
+        " que encontram-se vulneráveis por não adotarem o protocolo HTTPS no ano vigente \n\n"
+        "Última Atualização em 03/12/2025"),
         height=100
     )
 
 #funções que geram gráfico
 def gerar_grafico_proporcao_funcionamento(df):
+    st.subheader("Proporção de Funcionamento dos Equipamentos do SUS no DF:")
+
     df["parados"] = df["existentes_SUS"] - df["em_uso_SUS"]
 
     df["pct_em_uso"] = (df["em_uso_SUS"] / df["existentes_SUS"]) * 100
     df["pct_parados"] = (df["parados"] / df["existentes_SUS"]) * 100
 
     #filtro
-    equip_list = df["equipamento"].unique()
-    equip_sel = st.selectbox("Selecione o equipamento para verificar a proporção de funcionamento:", equip_list)
+    equip_sel = st.selectbox("Selecione o equipamento desejado",  
+        df["equipamento"].unique(), 
+        width=300, 
+        help="Selecione o equipamento para visualizar sua proporção de funcionamento.")
 
     # Filtragem de equipamento selecionado
     df_sel = df[df["equipamento"] == equip_sel].copy()
@@ -218,7 +240,6 @@ def gerar_grafico_proporcao_funcionamento(df):
 
     #texto de porcentagem
     df_melt["pct_text"] = "<b>" + df_melt["percentual"].round(1).astype(str) + "%</b>"
-    st.divider()
     
     fig = px.bar(
         df_melt,
@@ -241,7 +262,7 @@ def gerar_grafico_proporcao_funcionamento(df):
     )
 
     fig.update_layout(
-        title=f"Equipamento: {equip_sel} — Proporção de funcionamento",
+        title=f"{equip_sel}",
         xaxis_title="Percentual (%)",
         yaxis_title="",
         bargap=0.25,
@@ -250,6 +271,8 @@ def gerar_grafico_proporcao_funcionamento(df):
     fig.update_yaxes(showticklabels=False)
 
     st.plotly_chart(fig, use_container_width=True)
+
+    st.write("Última atualização em: dd/mm/aaaa")
 
 def gerar_dataset_escassez_SUS(df):
     df["privado"] = df["existentes"] - df["existentes_SUS"]
@@ -266,7 +289,7 @@ def gerar_dataset_escassez_SUS(df):
     st.dataframe(
         df_rank,
         use_container_width=True,
-        height=539, 
+        height=300, 
         column_config={
             "Desigualdade Percentual": st.column_config.NumberColumn(
                 "Desigualdade Percentual",
@@ -276,7 +299,10 @@ def gerar_dataset_escassez_SUS(df):
         }
     )
 
+    st.write("Última atualização em: dd/mm/aaaa")
+
 def gerar_grafico_previsao_mamografias(df):
+    st.subheader("Projeção do Número de Mamografias no DF para 2026 com Modelo Estatístico de Séries Temporais SARIMAX (ARIMA Sazonal com Regressão Exógena)")
     df_prev = df
     df_prev["DATE"] = pd.to_datetime(df_prev["DATE"])
 
@@ -305,15 +331,17 @@ def gerar_grafico_previsao_mamografias(df):
     fig.update_layout(
         width=900,
         height=359,
-        title="Previsão de Demanda de Exames de Mamografia até 2027",
+        title="Previsão de Demanda de Exames de Mamografia até 2026",
         xaxis_title="Data",
         yaxis_title="Quantidade de Exames"
     )
 
     st.plotly_chart(fig, use_container_width=True)
 
+    st.write("Última Atualização em 03/12/2025")
 
 def paginas_com_mais_erros(df):
+    st.subheader("Ranking das Páginas do Portal DataSUS com Maior Número de Erros de Acessibilidade Segundo o WAVE - Accessibility Evaluation Tool")
     # Limpeza de espaços no nome das colunas
     df.columns = df.columns.str.strip()
 
@@ -332,10 +360,11 @@ def paginas_com_mais_erros(df):
         min_value=5,
         max_value=min(100, len(df)),
         value=10,
+        width=290,
+        help="Selecione o número de páginas que deseja classificar de acordo como o número de erros de acessibilidade existentes",
         step=1
     )
-    
-    st.divider()
+
     
     df_top = df.nlargest(top_n, "Errors")
     
@@ -350,12 +379,15 @@ def paginas_com_mais_erros(df):
     
     fig.update_layout(
         xaxis_type="category",
-        height=359
+        height=524
     )
     
     st.plotly_chart(fig, use_container_width=True)
 
+    st.write("Última atualização em: dd/mm/aaaa")
+
 def distribuição_wave_bp(df):
+    st.subheader("Diagrama de Caixa dos Erros e Alertas Identificiados nas Páginas do Portal DataSUS pelo WAVE - Accessibility Evaluation Tool")
 
     # ----------------------------------------
     # LIMPEZA LEVE
@@ -409,14 +441,17 @@ def distribuição_wave_bp(df):
         x="Métrica",
         y="Valor",
         points="outliers",
-        title="Distribuição de Errors, Contrast Errors e Alerts por página: WAVE - Accessibility Evaluation Tool"
+        title="Distribuição de Errors, Contrast Errors e Alerts: WAVE - Accessibility Evaluation Tool"
     )
 
-    fig_counts.update_layout(height=508)
+    fig_counts.update_layout(height=608)
 
     st.plotly_chart(fig_counts, use_container_width=True)
 
+    st.write("Última atualização em: dd/mm/aaaa")
+
 def distribuicao_wave_aria_bp(df):
+    st.subheader("Diagrama de Caixa dos ARIA'S Identificiados nas Páginas do Portal DataSUS pelo WAVE - Accessibility Evaluation Tool")
     # ----------------------------------------
     # LIMPEZA LEVE
     # ----------------------------------------
@@ -477,10 +512,12 @@ def distribuicao_wave_aria_bp(df):
             df_box_score,
             y="AIM_Score",
             points="outliers",
-            title="Distribuição WAVE AIM Score entre páginas"
+            title="Distribuição WAVE AIM Score das páginas"
         )
         fig_score.update_layout(height=508)
         st.plotly_chart(fig_score, use_container_width=True)
+
+    st.write("Última atualização em: dd/mm/aaaa")
 
 def carregar_mamografia_uf(uf: str) -> pd.DataFrame:
     caminho = f"data_sets/estados/mamografia_atend{uf.lower()}.csv"
@@ -511,18 +548,19 @@ def preparar_distribuicao_tempo(df: pd.DataFrame) -> pd.DataFrame:
     return dist
 
 def grafico_barras_tempo_espera_df_vs_uf():
+    st.subheader("Comparação DF X Brasil em Tempo de Espera para Realização de Mamografias nos últimos 3 anos")
     ufs_disponiveis = [
         "AC","AL","AM","AP","BA","CE","ES","GO","MA","MG","MS","MT","PA","PB",
         "PE","PI","PR","RJ","RN","RO","RR","RS","SC","SE","SP","TO"
     ]
 
     uf_escolhida = st.selectbox(
-        "Selecione a Unidade da Federação para comparação com o Distrito Federal nos últimos 3 anos",
+        "Selecione a UF para comparação",
         options=ufs_disponiveis,
-        index=24  # exemplo: SP como default
+        help=("Selecione a Unidade da Federação para comparação do tempo de espera (intervalo de tempo entre a solicitação do exame até a realização efetiva) com o Distrito Federal nos últimos 3 anos"),
+        width=250,
+        index=24  
     )
-
-    st.divider()
 
     # Carrega dados
     df_df = carregar_mamografia_uf("DF")
@@ -550,7 +588,7 @@ def grafico_barras_tempo_espera_df_vs_uf():
             "pct": "Percentual de exames (%)",
             "UF": "Unidade da Federação"
         },
-        title="Distribuição percentual do tempo de espera para mamografias – DF vs UF selecionada"
+        title=f"Tempo de espera para Realização de mamografias DF vs {uf_escolhida}"
     )
 
     fig.update_traces(
@@ -563,11 +601,14 @@ def grafico_barras_tempo_espera_df_vs_uf():
         xaxis_title="Intervalo de tempo de espera",
         legend_title="UF",
         uniformtext_minsize=8,
+        height=628,
         uniformtext_mode="hide"
     )
     fig.update_yaxes(range=[0, 100])
 
     st.plotly_chart(fig, use_container_width=True)
+
+    st.write("Última atualização em: dd/mm/aaaa")
 
 def parse_data_mensal(s: str):
 
@@ -587,6 +628,7 @@ def parse_data_mensal(s: str):
         return pd.NaT
 
 def grafico_tendencia_profissionais_radiologia(df1,df2,df3):
+    st.subheader("Tendência temporal de profissionais de radiologia por categoria (2007-2025)")
     df_aux = df1
     df_dent = df2
     df_med = df3
@@ -656,4 +698,8 @@ def grafico_tendencia_profissionais_radiologia(df1,df2,df3):
     )
 
     st.plotly_chart(fig, use_container_width=True)
+
+    st.write("Última Atualização em 03/12/2025")
+
+
 

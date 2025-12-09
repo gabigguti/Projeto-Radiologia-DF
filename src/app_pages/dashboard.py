@@ -19,7 +19,7 @@ from funcoes import (
 
 st.set_page_config(layout="wide")
 
-st.write("Última Atualização: 03/12/2025")
+st.header("Métricas Gerais:")
 
 with st.container():
     col1, col2, col3, col4 = st.columns([1,1,1,1])
@@ -42,16 +42,26 @@ with st.container():
         with st.container(border=True):
             kpi_links_sem_https(pd.read_csv("data_sets/Dataset_acessibilidade_usabilidade_tratado.csv"))
 
+st.divider()
+
+st.header("Análises de Eficiência Operacional:")
+
 with st.container():
-    col_left, col_right = st.columns([3,2])
+    col1, col2 = st.columns([3,2])
 
-    with col_left:
-        with st.container(border=True):
-            gerar_grafico_previsao_mamografias(pd.read_csv("data_sets/previsao_1_ano.csv"))
-
-    with col_right:
+    with col1:  
         with st.container(border=True):
             gerar_grafico_proporcao_funcionamento(pd.read_csv("data_sets/qtd_equip_img_SUS_por_tipo.csv"))
+        with st.container(border=True):            
+            gerar_dataset_escassez_SUS(pd.read_csv("data_sets/qtd_equip_img_SUS_por_tipo.csv"))
+
+    with col2:
+        with st.container(border=True):
+            grafico_barras_tempo_espera_df_vs_uf()
+
+st.divider()
+
+st.header("Análises de Acessibilidade do Portal DataSUS:")
 
 with st.container():
     col1, col2, col3 = st.columns([2,2,1])
@@ -68,19 +78,13 @@ with st.container():
         with st.container(border=True):
             distribuicao_wave_aria_bp(pd.read_csv("data_sets/Dataset_acessibilidade_usabilidade_tratado.csv"))
 
-with st.container():
-    col1, col2 = st.columns([2,3])
+st.divider()
 
-    with col1:
-        with st.container(border=True):
-            grafico_barras_tempo_espera_df_vs_uf()
-
-    with col2:
-        with st.container(border=True):
-            gerar_dataset_escassez_SUS(pd.read_csv("data_sets/qtd_equip_img_SUS_por_tipo.csv"))
+st.header("Análises de Séries Temporais:")
 
 with st.container():
     with st.container(border=True):
+            gerar_grafico_previsao_mamografias(pd.read_csv("data_sets/previsao_1_ano.csv"))
+    with st.container(border=True):
         grafico_tendencia_profissionais_radiologia(pd.read_csv("data_sets/historico_anual_numero_auxiliares_e_tecnicos_em_radiologia_SUS - Página1 (2).csv"),pd.read_csv("data_sets/historico_anual_numero_cirurgioes_dentistas_radiologistas_SUS - denstista_radio_profissinoais.csv.csv"), pd.read_csv("data_sets/historico_anual_numero_medicos_radiologistas_e_diagnostico_imagem_SUS - cnes_cnv_proc02df001944189_6_37_247.csv.csv"))
-
 

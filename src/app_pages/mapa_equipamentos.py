@@ -104,4 +104,4 @@ fig.data[0].hovertemplate = (
     f"Total de equipamentos {label_selecionado}: %{{z}}<extra></extra>"
 )
 
-st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": True})
+st.plotly_chart(fig, width='stretch', config={"displayModeBar": True})
