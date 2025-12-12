@@ -60,22 +60,7 @@ Esse assistente LLM será capaz de interpretar os gráficos, compreender os dado
 
 ---
 
-## 4. Construção de um Banco de Dados Integrado
-
-Ao longo do projeto, foi realizado um levantamento amplo de informações provenientes de múltiplas fontes oficiais. Esses dados foram organizados em diversos datasets, cada um acompanhado de nota técnica contendo descrição de variáveis e fontes. A estrutura atual, embora composta por datasets temáticos separados, garante rastreabilidade, consistência documental e uso direto nas análises e visualizações do painel. Porém, para avançar em direção a integrações mais complexas e análises em maior escala, torna-se necessária a etapa seguinte: a consolidação dessas bases em um banco de dados integrado.
-
-### Objetivos
-- A etapa subsequente do projeto prevê a consolidação desses datasets em um repositório centralizado, que incorpore:
-- Esse repositório poderá assumir a forma de um modelo relacional ou de um data lake, conforme a demanda de escalabilidade e integração futura.
-
-### Benefícios esperados
-- Redução de redundâncias e inconsistências entre fontes.
-- Melhoria na capacidade de cruzamento e enriquecimento analítico.
-- Base estruturada para evolução posterior em direção a melhores modelos preditivos e análises avançadas.
-
----
-
-## 5. Automação do Pipeline de ETL
+## 4. Automação do Pipeline de ETL
 
 Com a integração via API e web scraping, será necessário estabelecer um pipeline automatizado de extração, transformação e carregamento (ETL).
 
@@ -93,7 +78,7 @@ Com a integração via API e web scraping, será necessário estabelecer um pipe
 
 ---
 
-## 6. Ampliação das Visualizações e Indicadores
+## 5. Ampliação das Visualizações e Indicadores
 
 O aprimoramento do painel inclui a incorporação de análises mais profundas, robustas e orientadas a diagnóstico e previsão. A intenção é expandir a capacidade analítica do sistema, permitindo interpretações cada vez mais completas sobre a evolução tecnológica, a eficiência dos equipamentos, a dinâmica dos recursos humanos e os fatores que influenciam a performance da saúde pública no Distrito Federal.
 
