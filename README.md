@@ -25,16 +25,13 @@ A solução propõe:
   - Integrar dados dispersos das plataformas DATASUS, SISCAN, CNES, TABNET e IBGE.
   - Mapear tempos de espera, capacidade teórica x realizada e volume de exames.
   - Catalogar indicadores de manutenção, disponibilidade e inoperância.
-  - Reunir dados de campanhas de conscientização (queda, trauma, oncologia).
 
 - **Desenvolver Dashboard Interativo:**  
   - Visualizar atrasos de exames e gargalos regionais.
   - Exibir distribuição geográfica dos equipamentos.
   - Mostrar eficiência operacional (taxas de utilização, capacidade versus demanda).
   - Integrar análises diagnósticas e preditivas, incluindo:
-    - projeção de demanda de exames até 2030 (ARIMA)
-    - simulação de impacto de novos investimentos (+10 mamógrafos → redução de X% no tempo médio)
-    - estimativa de depreciação e renovação da frota de equipamentos
+    - projeção de demanda futura de exames (SARIMAX)
 
 - **Analisar Padrões e Tendências:**  
   - Identificar regiões críticas com escassez de equipamentos.
@@ -57,8 +54,7 @@ A solução propõe:
 | Gabriel Marques     | Desenvolvimento / Pesquisa |
 
 ## **Estrutura do Repositório**
-- **/design**: Mockups, imagens e elementos visuais do projeto.  
-- **/docs**: Entregáveis, documentação, atas de reunião, especificações e afins.  
-- **/database**: Arquivos dos dados coletados.  
-- **/prototype**: Protótipos.  
+- **/Entregáveis**: Entregáveis de cada unidade, como documentação, atas de reunião, especificações e afins. 
+- **/assets**: Pasta usada pelo Streamlit para armazenar imagens
+- **/data_sets**: Pasta usada pelo Streamlit para armazenar dados
 - **/src**: Código-fonte principal do projeto.
