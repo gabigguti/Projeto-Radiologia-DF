@@ -1,0 +1,19 @@
+codigo,equipamento,existentes,em_uso,existentes_SUS,em_uso_SUS
+1,Raio X Dentário,535,490,83,66
+2,Gama Câmara,32,30,1,1
+3,Mamógrafo com Estereotaxia,24,24,4,4
+4,Raio X ate 100 mA,124,115,45,43
+5,Raio X de 100 a 500 mA,162,157,80,77
+6,Raio X mais de 500mA,70,68,26,24
+7,Mamógrafo com Comando Simples,73,68,32,28
+8,Raio X com Fluoroscopia,32,30,19,17
+9,Raio X para Densitometria Óssea,69,66,8,7
+10,Raio X para Hemodinâmica,22,22,8,8
+11,Tomógrafo Computadorizado,213,204,51,49
+12,Ressonância Magnética,130,125,44,42
+13,Ultrassom Doppler Colorido,510,500,107,101
+14,Ultrassom Ecógrafo,355,340,93,87
+15,Ultrassom Convencional,460,447,93,90
+16,Processadora De Filme Mamografia,44,43,34,33
+17,Mamógrafo Computadorizado,52,52,17,17
+18,PET/CT,10,10,1,1

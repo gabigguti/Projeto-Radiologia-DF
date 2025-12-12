@@ -1,0 +1,1 @@
+Link para acesso ao Dashboard com Visualizações de dados (gráficos, mapas, dataframes) e KPI's definidas: https://radiologia-df.streamlit.app/
